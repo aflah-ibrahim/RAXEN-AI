@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfcfa">
+  <title>RAXEN AI | Personal shopping assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#" aria-label="RAXEN AI home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>RAXEN AI<small>Personal shopping assistant</small></span>
+    </a>
+
+    <p class="side-label">Your expert team</p>
+    <div class="advisor"><span class="advisor-icon">▣</span><span>Adrian Marcus<small>PCs &amp; workstations</small></span></div>
+    <div class="advisor"><span class="advisor-icon">✧</span><span>Product Concierge<small>Accessories &amp; IT</small></span></div>
+    <div class="advisor"><span class="advisor-icon">✓</span><span>Ethan Cole<small>Purchase guidance</small></span></div>
+
+    <p class="side-label">How we can help</p>
+    <div class="advisor"><span class="advisor-icon">⌕</span><span>Find the right fit<small>Personalized product advice</small></span></div>
+    <div class="advisor"><span class="advisor-icon">⇄</span><span>Compare options<small>Clear, practical trade-offs</small></span></div>
+    <div class="advisor"><span class="advisor-icon">↗</span><span>Plan your purchase<small>Helpful checkout guidance</small></span></div>
+
+    <div class="privacy-note"><strong>Here to help, never to pressure.</strong><br>
+      Your conversation stays in this browser session.</div>
+    <button class="new-chat" id="new-chat" type="button">＋&nbsp; Start a new conversation</button>
+  </aside>
+
+  <main class="main">
+    <header class="topline">
+      <span>RAXEN&nbsp; / &nbsp;AI ASSISTANT</span>
+      <span class="live"><i></i> Specialists online</span>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <p class="eyebrow">A better way to choose</p>
+      <h1>What are you looking for?</h1>
+      <p class="intro">Get thoughtful, straightforward advice from the RAXEN team.
+        Tell us what you have in mind, and we’ll help you find your way.</p>
+      <p class="suggestion-label">A few places to start</p>
+      <div class="suggestions">
+        <button type="button" data-prompt="Help me choose a gaming PC">↗&nbsp; Help me choose a gaming PC</button>
+        <button type="button" data-prompt="I need a monitor for my home office">↗&nbsp; I need a monitor for my home office</button>
+        <button type="button" data-prompt="What should I consider for a workstation?">↗&nbsp; What should I consider for a workstation?</button>
+        <button type="button" data-prompt="I’m ready to make a purchase">↗&nbsp; I’m ready to make a purchase</button>
+      </div>
+    </section>
+
+    <section class="conversation" id="conversation" aria-live="polite" aria-label="Conversation"></section>
+    <p class="status" id="status" role="status"></p>
+
+    <form class="composer" id="chat-form">
+      <label class="visually-hidden" for="message-input">Your message</label>
+      <textarea id="message-input" rows="1" placeholder="Ask about PCs, accessories, or your purchase…" required></textarea>
+      <button class="send-button" id="send-button" type="submit" aria-label="Send message">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-5 16-3-7-8-1Zm8 1 8-9"/></svg>
+      </button>
+    </form>
+    <p class="disclaimer">Helpful guidance, based on the details you share. Product availability and pricing should always be confirmed on RAXEN.</p>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

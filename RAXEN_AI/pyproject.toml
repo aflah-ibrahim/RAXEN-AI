@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raxen-ai-workflow"
+version = "0.1.0"
+description = "RAXEN AI shopping assistant with a multi-specialist chat workflow"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-openai>=0.2",
+    "langgraph>=0.2",
+    "python-dotenv>=1.0",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["raxen_ai*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
